@@ -1,0 +1,101 @@
+/* articulos y aside */
+
+*{
+    margin:10px;
+    padding: 10px;
+    box-sizing: border-box;
+    /* las cajas no se sobrepongan unas con otras */
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+    /* para que todo se adapte segun el tamaño establecido */
+}
+
+/* segundo  */
+    .header{
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+    }
+         .menu{
+        background: #D4ECDD;
+        display: flex;
+        flex-flow: row nowrap;
+         height: 100px;
+        align-items: center;
+        }
+        /* menu tiene 3 contenedores hijo  */
+             .logo{
+            background: #345B63;
+            height: 30px;
+                flex:1 1 auto;
+            height: 30px;
+            }
+            .nav{
+            background: #345B63;
+            flex:5 1 auto;
+              height: 30px;
+            }
+            .social{
+            background: #345B63;
+            flex:1 1 auto;
+              height: 30px;
+            } 
+        /* hasta aqui se visualiza el primer bloque  */
+        .texto-principal{
+            background: #112031;
+        }
+        h1{
+            background: #36778d;
+        }
+
+
+
+
+
+
+
+        /* ahora la parte 2 section  SOLO AGREGA FLEX AL ARTICULO Y AL ASIDE QUE SON LOS PRINCIPALES*/ 
+.section{
+    background: #000;
+    display: flex;
+}
+
+/* aqui creamos los hijos de section que serian los articulos y navegatison*/
+    .articulos{
+        background: #22577A;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .article{
+            background: #38A3A5;
+            flex:1 1 50px;
+        }
+        .navegacion{
+            background: #57CC99;
+            flex:1 1 100%;
+        }
+    .aside{
+        background: #3B185F;
+        flex: 1 1 auto;
+    }
+.publicidad{
+    background: #FEC260;
+}
+
+/* ultima seccion  */
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+.pie{
+    background: #3E00FF;
+    width: 300px;
+    
+}
+
+
